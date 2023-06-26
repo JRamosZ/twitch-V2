@@ -3,6 +3,7 @@ export default function GameSuggestion(props) {
     <article className="gameSuggestion">
       <a href="">
         <img src={props.src} alt="" />
+        {props.isNew && <div className="newTag">NEW</div>}
       </a>
       <a className="channelName" href="">
         {props.gameName}
@@ -10,7 +11,7 @@ export default function GameSuggestion(props) {
       <a className="channelGame" href="">
         {props.gameViewers} Viewers
       </a>
-      {props.isNew && <div className="newTag">NEW</div>}
+
       <div className="tagsContainer">
         {(() => {
           let td = [];
