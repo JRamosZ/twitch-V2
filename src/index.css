@@ -2,15 +2,21 @@
   background-color: #26262c;
   display: flex;
   flex-direction: column;
-  gap: 15px;
-  padding: 10px;
-  padding-left: 20px;
+  padding: 0;
+  padding-top: 15px;
 }
 
 .channelStatus {
   align-items: center;
   display: flex;
   gap: 15px;
+  text-decoration: none;
+  padding: 5px 10px;
+  padding-left: 20px;
+}
+
+.channelStatus:hover {
+  background-color: #7c7c7d;
 }
 
 .channelStatusIMG {
@@ -28,6 +34,7 @@
   color: #adadb8;
   margin: 0;
   font-size: small;
+  margin-bottom: 4px;
 }
 
 .channelListeners {
@@ -55,6 +62,13 @@
   flex-direction: column;
   position: relative;
   margin-bottom: 10px;
+}
+
+.gameSuggestion .imgContainer {
+  background: #9047ff;
+}
+.gameSuggestion .imgContainer img:hover {
+  transform: translate(5px, -5px);
 }
 
 .gameSuggestion a {

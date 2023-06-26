@@ -1,10 +1,12 @@
 export default function GameSuggestion(props) {
   return (
     <article className="gameSuggestion">
-      <a href="">
-        <img src={props.src} alt="" />
-        {props.isNew && <div className="newTag">NEW</div>}
-      </a>
+      <div className="imgContainer">
+        <a href="">
+          <img src={props.src} alt="" />
+          {props.isNew && <div className="newTag">NEW</div>}
+        </a>
+      </div>
       <a className="channelName" href="">
         {props.gameName}
       </a>
