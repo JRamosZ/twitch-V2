@@ -1,0 +1,97 @@
+.leftSide {
+  background-color: #26262c;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 10px;
+  padding-left: 20px;
+}
+
+.channelStatus {
+  align-items: center;
+  display: flex;
+  gap: 15px;
+}
+
+.channelStatusIMG {
+  height: 50px;
+  border-radius: 50%;
+}
+
+.channelName {
+  color: #dedee3;
+  font-weight: bold;
+  margin: 0;
+}
+
+.channelGame {
+  color: #adadb8;
+  margin: 0;
+  font-size: small;
+}
+
+.channelListeners {
+  color: #dcdce2;
+}
+
+.channelInfo {
+  flex-grow: 1;
+}
+
+.rightSide {
+  background: #0e0e0f;
+  display: flex;
+  padding: 15px 35px;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.notOnline img {
+  filter: grayscale(100%);
+}
+
+.gameSuggestion {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.gameSuggestion a {
+  text-decoration: none;
+}
+
+.gameSuggestion a:hover {
+  color: #a16bf3;
+}
+
+.newTag {
+  background-color: #f775e6;
+  text-align: center;
+  border-radius: 8px;
+  padding: 2px;
+  font-size: 10px;
+  font-weight: bold;
+  width: 40px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.tagsContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.tagsContainer button {
+  font-weight: bold;
+  border-radius: 20px;
+  font-size: 11px;
+  background-color: #2b2b31;
+  color: #adadb8;
+  border: none;
+}
+
+.tagsContainer button:hover {
+  background: #313138;
+}
