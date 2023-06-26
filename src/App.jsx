@@ -102,6 +102,13 @@ export default function App() {
             gameTags={["FPS", "Shooter"]}
             isNew={true}
           />
+          <GameSuggestion
+            src="https://static-cdn.jtvnw.net/ttv-boxart/15828774_IGDB-188x250.jpg"
+            gameName="Greyhill Incident"
+            gameViewers="40"
+            gameTags={["FPS", "Shooter"]}
+            isNew={true}
+          />
         </div>
       </div>
     </>
