@@ -45,16 +45,16 @@
   flex-grow: 1;
 }
 
+.notOnline img {
+  filter: grayscale(100%);
+}
+
 .rightSide {
   background: #0e0e0f;
   display: flex;
   padding: 15px 35px;
   gap: 10px;
   flex-wrap: wrap;
-}
-
-.notOnline img {
-  filter: grayscale(100%);
 }
 
 .gameSuggestion {
@@ -67,7 +67,7 @@
 .gameSuggestion .imgContainer {
   background: #9047ff;
 }
-.gameSuggestion .imgContainer img:hover {
+.gameSuggestion .imgContainer div:hover {
   transform: translate(5px, -5px);
 }
 

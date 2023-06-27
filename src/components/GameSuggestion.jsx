@@ -2,10 +2,12 @@ export default function GameSuggestion(props) {
   return (
     <article className="gameSuggestion">
       <div className="imgContainer">
-        <a href="">
-          <img src={props.src} alt="" />
-          {props.isNew && <div className="newTag">NEW</div>}
-        </a>
+        <div>
+          <a href="">
+            <img src={props.src} alt="" />
+            {props.isNew && <div className="newTag">NEW</div>}
+          </a>
+        </div>
       </div>
       <a className="channelName" href="">
         {props.gameName}
@@ -15,13 +17,9 @@ export default function GameSuggestion(props) {
       </a>
 
       <div className="tagsContainer">
-        {(() => {
-          let td = [];
-          for (let i = 0; i < props.gameTags.length; i++) {
-            td.push(<button key={i}>{props.gameTags[i]}</button>);
-          }
-          return td;
-        })()}
+        {props.gameTags.map((tag, index) => {
+          return <button key={index}>{tag}</button>;
+        })}
       </div>
     </article>
   );
